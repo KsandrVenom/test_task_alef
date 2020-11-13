@@ -120,14 +120,22 @@
 
   <footer class="footer">
     <div class="footer-container container">
-      <div class="action">
-        <h2 class="action-header">Успей купить!</h2>
-        <p class="action-text">Подпишись и успей словить все акции</p>
-      </div>
-      <div class="subcribe">
-        <input type="email" class="email" placeholder="Email" required>
-        <input type="submit" class="submit" value="Подписаться">
-        <input type="checkbox" class="checkbox" checked>
+      <div class="main-footer">
+        <div class="action">
+          <h2 class="action-header">Успей купить!</h2>
+          <p class="action-text">Подпишись и успей<br> словить все акции</p>
+        </div>
+        <div class="subcribe">
+          <form action="" method="post">
+            <input type="email" class="email" name="email" placeholder="Email" required>
+            <input type="submit" class="submit" value="Подписаться">
+            <div class="news">
+              <label class="label-checkbox">
+                <input type="checkbox" class="checkbox" checked>Подписаться на новости
+              </label>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </footer>

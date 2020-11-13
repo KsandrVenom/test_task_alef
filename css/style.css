@@ -237,10 +237,15 @@
   display: flex;
 }
 
+.main-footer {
+  display: flex;
+  margin-left: 84px;
+  margin-top: 29px;
+  align-items: baseline;
+}
+
 .action {
   color: #ffffff;
-  margin-left: 84px;
-  padding-top: 71px;
 }
 
 .action-header {
@@ -253,6 +258,10 @@
   font-weight: normal;
   font-size: 28px;
   line-height: 91.2%;
+}
+
+.subcribe {
+  margin-left: 87px;
 }
 
 .email {
@@ -278,6 +287,23 @@
   border-radius: 10px;
   box-sizing: border-box;
   font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+  margin-left: 16px;
+}
+
+.news {
+  margin-top: 24px;
+}
+
+.checkbox {
+  background: #6ebbd3;
+  border-radius: 3px;
+  padding-right: 24px;
+}
+
+.label-checkbox {
   font-size: 14px;
   line-height: 17px;
   color: #ffffff;
