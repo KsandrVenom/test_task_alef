@@ -14,12 +14,12 @@
     <div class="header-container container">
       <div class="header-main">
         <img src="img/logo.svg" alt="Логотип" class="logo">
-        <ul class="menu-list">
-            <li class="menu-item">Main</li>
-            <li class="menu-item">Gallery</li>
-            <li class="menu-item">News</li>
-            <li class="menu-item">Profile</li>
-         </ul>
+        <nav class="menu-list">
+            <a href="#" class="menu-item">Main</a>
+            <a href="#" class="menu-item">Gallery</a>
+            <a href="#" class="menu-item">News</a>
+            <a href="#" class="menu-item">Profile</a>
+        </nav>
         <div class="tel">
           +544 3490 00000 <br><span class="tel-quick">Звони скорее!</span>
         </div>
@@ -115,6 +115,9 @@
       </div>
       <!-- /.card -->
       <div class="more">Показать еще 20</div>
+      <div class="button-container">
+        <div class="button-up"></div>
+      </div>
     </div>
   </main>
 
@@ -131,7 +134,9 @@
             <input type="submit" class="submit" value="Подписаться">
             <div class="news">
               <label class="label-checkbox">
-                <input type="checkbox" class="checkbox" checked>Подписаться на новости
+                <input type="checkbox" class="real-checkbox" checked>
+                <span class="custom-checkbox"></span>
+                Подписаться на новости
               </label>
             </div>
           </form>

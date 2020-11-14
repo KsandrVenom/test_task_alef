@@ -2,11 +2,14 @@
   font-family: "Montserrat", sans-serif;
   font-style: normal;
 }
+
 .container {
   margin: 0 auto;
   max-width: 1280px;
   width: 100%;
 }
+
+/* Шапка */
 
 .header-container {
   height: 226px;
@@ -29,18 +32,19 @@
 }
 
 .menu-list {
-  width: 26%;
+  width: 27%;
   display: flex;
   justify-content: space-between;
   list-style: none;
-  padding-left: 0px;
-  margin-left: 120px;
+  margin-left: 90px;
 }
 
 .menu-item {
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
+  color: #fff;
+  text-decoration: none;
 }
 
 .menu-item:last-child {
@@ -231,6 +235,20 @@
   justify-content: center;
 }
 
+.button-container {
+  position: relative;
+}
+
+.button-up {
+  width: 59px;
+  height: 59px;
+  background: url(../img/arrowup.svg) no-repeat center center;
+  background-color: #6ebbd3;
+  position: absolute;
+  right: 0px;
+  bottom: 61px;
+}
+
 .footer-container {
   background-color: #1f2021;
   height: 312px;
@@ -297,16 +315,90 @@
   margin-top: 24px;
 }
 
-.checkbox {
+.real-checkbox {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.custom-checkbox {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
   background: #6ebbd3;
   border-radius: 3px;
-  padding-right: 24px;
+  margin-right: 18px;
+  vertical-align: sub;
+  position: relative;
+}
+
+.custom-checkbox::before {
+  content: "";
+  display: inline-block;
+  background: url(../img/tick.svg);
+  background-size: contain;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.real-checkbox:checked + .custom-checkbox::before {
+  transform: translate(-50%, -50%) scale(1);
 }
 
 .label-checkbox {
   font-size: 14px;
   line-height: 17px;
   color: #ffffff;
+}
+
+/* Состояния */
+
+.menu-item:link {
+  color: white;
+}
+
+.menu-item:visited {
+  color: #6ebbd3;
+}
+
+.menu-item:hover,
+.sort-price:hover,
+.sort-old:hover {
+  color: red;
+}
+
+.sort-price:active,
+.sort-old:active {
+  color: #6ebbd3;
+}
+
+.heart-img:hover {
+  transform: scale(2);
+}
+
+.more:hover {
+  color: #6ebbd3;
+}
+
+.more:active {
+  color: red;
+}
+
+.email:focus,
+.email:hover::placeholder {
+  color: red;
+}
+
+.real-checkbox:hover + .custom-checkbox,
+.button-up:hover,
+.submit:hover {
+  border: 1px solid red;
 }
 
 /* @media (min-width: 1180px) {
