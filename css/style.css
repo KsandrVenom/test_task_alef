@@ -1,6 +1,7 @@
 * {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -74,6 +75,8 @@
   margin-bottom: 40px;
 }
 
+/* Основная часть */
+
 .main {
   margin-top: 36px;
 }
@@ -108,6 +111,8 @@
   padding-right: 38px;
   margin-left: 55px;
 }
+
+/* Карточки */
 
 .cards {
   display: flex;
@@ -218,6 +223,8 @@
   background: #1f2021;
 }
 
+/* Кнопки и расширения */
+
 .more {
   font-weight: normal;
   font-size: 14px;
@@ -244,10 +251,18 @@
   height: 59px;
   background: url(../img/arrowup.svg) no-repeat center center;
   background-color: #6ebbd3;
-  position: absolute;
+  position: fixed;
   right: 0px;
   bottom: 61px;
+  cursor: pointer;
+  display: none;
 }
+
+.shown {
+  display: inline-block;
+}
+
+/* Подвал */
 
 .footer-container {
   background-color: #1f2021;
@@ -378,6 +393,14 @@
   color: #6ebbd3;
 }
 
+.card-buy:hover {
+  color: black;
+}
+
+.card-sold:hover {
+  color: #6ebbd3;
+}
+
 .heart-img:hover {
   transform: scale(2);
 }
@@ -400,10 +423,3 @@
 .submit:hover {
   border: 1px solid red;
 }
-
-/* @media (min-width: 1180px) {
-  {
-    max-width: 1280px;
-    margin: 0 auto;
-  }
-} */
