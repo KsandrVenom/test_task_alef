@@ -307,11 +307,18 @@
   box-sizing: border-box;
 }
 
-.email::placeholder,
 .email::-moz-placeholder,
 .email:-moz-placeholder,
 .email:-ms-input-placeholder,
 .email::-webkit-input-placeholder {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  padding-left: 33px;
+}
+
+.email::placeholder {
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
